@@ -250,7 +250,15 @@ For notifications the following is also necessary:
 ```text
 sudo zypper install libnotify-devel
 ```
-
+### Dependencies OpenSuSE Tumbleweed 
+```text
+sudo zypper addrepo --check --refresh "D" http://download.opensuse.org/repositories/devel:/languages:/D/openSUSE_Tumbleweed/devel:languages:D.repo
+sudo zypper install git libcurl-devel sqlite3-devel dmd libphobos2 phobos-devel phobos-devel-static
+```
+For notifications the following is also necessary:
+```text
+sudo zypper install libnotify-devel
+```
 ## Compilation & Installation
 ### Building using DMD Reference Compiler
 Before cloning and compiling, if you have installed DMD via curl for your OS, you will need to activate DMD as per example below:
